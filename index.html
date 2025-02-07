@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- Added EmailJS SDK -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">ABEL_GA</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h1>About Me</h1>
+        <div class="about-content">
+          <div class="profile-image">
+            <img src="photo_2023-07-26_21-39-35.jpg" alt="Profile Picture" />
+          </div>
+          <div class="bio">
+            <p>
+              Hello! I am Abel Getahun and a Computer Science graduate
+              passionate about full-stack development, AI, and open-source
+              innovation. With 2+ years of experience building scalable web apps
+              and contributing to impactful projects, I thrive on bridging
+              technology and real-world solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h1>Skills</h1>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git</li>
+              <li>Webpack</li>
+              <li>Docker</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h1>Projects</h1>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A website for a wedding and custom made clothing company.</p>
+            <a href="https://afombridal.com/#Home"> AFOM BRIDAL </a>
+          </div>
+          <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Description of project 2...</p>
+          </div>
+          <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Description of project 3...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h1>Contact</h1>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 ABEL_AG. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "x33FIFUUsMhtrgdCt",
+      });
+   })();
+</script>
+
+  </body>
+</html>
